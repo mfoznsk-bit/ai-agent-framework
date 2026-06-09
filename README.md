@@ -29,3 +29,28 @@ How to create a CLI application that handles user input and displays AI response
 How to maintain conversation history for context-aware replies.
 How to safely store and use API keys using environment variables.
 Basic Git and GitHub workflow: commit, push, and manage your repository.
+
+# 🤖 AI Agent Framework
+
+Two production-ready AI agents built with Groq API demonstrating tool calling and multi-stage orchestration.
+
+## 📦 Agents in this repo
+
+### 1. Calculator Agent (`calculator_agent.py`)
+- **Tools:** Calculator (add/subtract/multiply/divide) + Datetime (Algeria timezone)
+- **Features:** Sequential tool calling, multi-step math, error handling
+- **Model:** Groq Mixtral 8x7B
+
+### 2. Decomposition Agent (`decomposition_agent.py`)
+- **Pattern:** 3-stage orchestration (Planner → Executor → Synthesizer)
+- **Use case:** Breaking complex business goals into subtasks
+- **Output:** Structured JSON plans + synthesized reports
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/mfoznsk-bit/ai-agent-framework.git
+cd ai-agent-framework
+pip install groq python-dotenv
+export GROQ_API_KEY="your-key-here"
+python calculator_agent.py
