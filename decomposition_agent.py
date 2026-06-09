@@ -38,7 +38,7 @@ from groq import Groq
 # SETUP
 # =========================================================
 
-client = Groq(api_key=os.getenv("sk-a148a763c336409ca4211959f4b8229d"))
+client = Groq(api_key=os.getenv(""))
 
 # 70B model — essential for structured JSON output and reasoning quality.
 # Never use 8B models for orchestration tasks (they hallucinate JSON structure).
